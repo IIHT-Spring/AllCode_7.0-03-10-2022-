@@ -1,7 +1,7 @@
 package com.lambda;
 
 interface printName1 {
-	public void print();
+	public void prints();
 }
 public class WithLambda {
 	
@@ -12,7 +12,9 @@ public class WithLambda {
 		printName1 Myname=()-> {
 			System.out.println("Printing name " + name);
 		};
-		Myname.print();
+		Myname.prints();
 	}
+
+
 
 }

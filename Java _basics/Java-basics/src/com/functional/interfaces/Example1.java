@@ -9,10 +9,12 @@ interface Message {
 	int hashCode();
 }
 
-public class Example1 {
+public class Example1 implements Message {
 
+	@Override
 	public void print(String msg) {
 		System.out.println(msg);
+		
 	}
 
 	public static void main(String[] args) {
@@ -20,4 +22,6 @@ public class Example1 {
 		e1.print("asdasdasd");
 
 	}
+
+
 }
