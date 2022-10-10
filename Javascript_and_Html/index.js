@@ -94,32 +94,63 @@ console.log(marks);
     console.log("we have less than 10 food items ");
   }
 
-  switch(menu.length) {
-    case 0 : console.log("no items in menu");
-    break;
-    case 1 : console.log("1 items in menu");
-    break;
-    case 2 : console.log("2 items in menu");
-    break;
-    case 3 : console.log("3 items in menu");
-    break;
-    case 4 : console.log("4 items in menu");
-    break;
-    case 5 : console.log("5 items in menu");
-    break;
-    case 6 : console.log("6 items in menu");
-    break;
-    case 7 : console.log("7 items in menu");
-    break;
-    case 8 : console.log("8 items in menu");
-    break;
-    default: console.log("more than 8 items ");
+  switch (menu.length) {
+    case 0:
+      console.log("no items in menu");
+      break;
+    case 1:
+      console.log("1 items in menu");
+      break;
+    case 2:
+      console.log("2 items in menu");
+      break;
+    case 3:
+      console.log("3 items in menu");
+      break;
+    case 4:
+      console.log("4 items in menu");
+      break;
+    case 5:
+      console.log("5 items in menu");
+      break;
+    case 6:
+      console.log("6 items in menu");
+      break;
+    case 7:
+      console.log("7 items in menu");
+      break;
+    case 8:
+      console.log("8 items in menu");
+      break;
+    default:
+      console.log("more than 8 items ");
   }
+  // arrow function
 
+  function Area(num1, num2) {
+    console.log(num1 * num2);
+    return num1 * num2;
+  }
+  // traditional way to write a function
 
+  Area(70, 50);
 
+  area1 = (num1, num2) => {
+    console.log(num1 * num2);
+    return num1 * num2;
+  }; // arrow function
+  area1(10, 50);
 
+  // set is js collection which can store only unique values
 
+  const id_no = new Set([12, 13, 14, 15, 16, 17, 12, 18]);
+
+  id_no.add(122);
+
+  id_no.delete(13);
+  console.log(id_no);
+
+  console.log(id_no.has(14));
 }
 
 // console.log(a);
