@@ -23,6 +23,7 @@
             background-color: #F5FA96;
         }
     </style>
+    <script src="./userform.js"></script>
 </head>
 
 <body>
@@ -44,7 +45,20 @@
         <lable for="gender">Gender:</lable>
         <input type="radio" value="Male" name="gender" id="gender">Male
         <input type="radio" value="Female" name="gender" id="gender">Female
+
+        <br>
+        <input type="text" name="blur" id="blur" onblur="BlurEvent()" placeholder="this is a dummy text box"/>
+        <br>
+        <select id="food" onchange="onChangeEvent()">
+            <option value="pizza">Pizza</option>
+            <option value="Biryani">Biryani</option>
+            <option value="Cake">Cake</option>
+        </select>
+        <p id="demo"></p>
+        <br>
+        <input type="text" id="focus" onfocus="onFocusEvent(this.id)" placeholder="enter your dob"/>
         <button>Submit</button>
+       
         <div>
             <table>
                 <tr>
@@ -85,7 +99,7 @@
             </table>
 
         </div>
-        <div style="text-align: justify;">
+        <div style="text-align: justifyad;">
             <!-- un-ordered list -->
             <ul>
                 <li>Paneer</li>
@@ -104,6 +118,11 @@
         </div>
 
     </div>
+    <img src="./dog.jpg"/>
+    <center>
+        <a href="https://www.akc.org/dog-breeds/golden-retriever/">Know more about Golden DOgs</a>
+    </center>
+    <img src="./dog2.png"/>
 
 
 </body>

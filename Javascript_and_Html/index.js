@@ -152,5 +152,22 @@ console.log(marks);
 
   console.log(id_no.has(14));
 }
+var promise = new Promise(function(resolve,reject){
+  const passingMarks = 500;
+  const securedMarks = 400;
 
+  if( passingMarks <= securedMarks) {
+      resolve()
+  } else {
+      reject()
+  }
+})
+promise.then(function(){
+  console.log("Congrats you have passed the exam");
+}).catch(function() {
+  console.log("Try again next year , work harder, all the best!");
+})
 // console.log(a);
+
+
+
