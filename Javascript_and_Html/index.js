@@ -169,5 +169,19 @@ promise.then(function(){
 })
 // console.log(a);
 
+ async function sayMyName() {
+  const response = await fetch("https://api.github.com/users")
+  console.log("before response");
+  const users = await response.json();
+  console.log("users resolved");
+  return users;
+}
+console.log("before calling say my name text ");
+let say = sayMyName();
+console.log("after calling say my name text ");
+say.then(users=> console.log(users));
+console.log(say);
+console.log("last calling say my name text ");
+
 
 
