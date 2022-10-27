@@ -13,6 +13,30 @@
       "email": "vishal@email.com",
       "gender": "Male",
       "id": 2
+    },
+    {
+      "firstname": "Abhishek",
+      "lastname": "Singh",
+      "class": 12,
+      "email": "abhi@gmail.com",
+      "gender": "Male",
+      "id": 3
+    },
+    {
+      "firstname": "Sweta",
+      "lastname": "Singh",
+      "class": 12,
+      "email": "sweta@gmail.com",
+      "gender": "Male",
+      "id": 4
+    },
+    {
+      "firstname": "Peter",
+      "lastname": "England",
+      "class": 11,
+      "email": "peter@gmail.com",
+      "gender": "Male",
+      "id": 5
     }
   ]
 }
