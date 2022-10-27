@@ -9,13 +9,15 @@ import { HomeComponent } from './Components/home/home.component';
 import { StudentRegComponent } from './Components/student-reg/student-reg.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RedgisteredStudentsComponent } from './Components/redgistered-students/redgistered-students.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     StudentRegComponent,
-    NavbarComponent
+    NavbarComponent,
+    RedgisteredStudentsComponent
   ],
   imports: [
     BrowserModule,
