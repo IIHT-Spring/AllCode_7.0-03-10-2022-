@@ -1,11 +1,18 @@
-
 {
-    "students" : [
-        {
-            "firstname":"Nishant",
-            "lastname":"Gupta",
-            "gender":"Male",
-            "id":1
-        } 
-    ]
+  "students": [
+    {
+      "firstname": "Nishant",
+      "lastname": "Gupta",
+      "gender": "Male",
+      "id": 1
+    },
+    {
+      "firstname": "Vishal",
+      "lastname": "Kumar",
+      "class": 11,
+      "email": "vishal@email.com",
+      "gender": "Male",
+      "id": 2
+    }
+  ]
 }

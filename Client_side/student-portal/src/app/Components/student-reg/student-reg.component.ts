@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Student from 'src/app/Entity/Student';
+import { StudentService } from 'src/app/Services/student.service';
 
 @Component({
   selector: 'app-student-reg',
@@ -13,10 +14,19 @@ export class StudentRegComponent implements OnInit {
 
 
   save() {
-    console.log(this.student);
+    const observable = this.studentService.saveStudent(this.student);
+    observable.subscribe(
+      (response: any) => {
+        console.log(response);
+      }, function(error) {
+        console.log(error);
+        alert("something went wrong please try again")
+        
+      }
+    )
   }
 
-  constructor() {}
+  constructor(private studentService: StudentService) {}
 
   ngOnInit(): void {}
 }
