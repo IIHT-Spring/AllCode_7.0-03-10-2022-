@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Student from 'src/app/Entity/Student';
 
 @Component({
   selector: 'app-student-reg',
@@ -8,16 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class StudentRegComponent implements OnInit {
   title = 'Fill out all the details below'; // one way
 
-  studentDetails = {
-    firstname: '',
-    lastname: '',
-    class: 0,
-    email: '',
-    gender: '',
-  };
+  student :Student = new Student();
+
 
   save() {
-    console.log(this.studentDetails);
+    console.log(this.student);
   }
 
   constructor() {}
