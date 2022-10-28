@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { RedgisteredStudentsComponent } from './Components/redgistered-students/redgistered-students.component';
 import { AboutComponent } from './Components/about/about.component';
 import { ContactUsComponent } from './Components/contact-us/contact-us.component';
+import { PipeDemoComponent } from './components/pipe-demo/pipe-demo.component';
+import { EllipsisPipe } from './Pipes/ellipsis.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ContactUsComponent } from './Components/contact-us/contact-us.component
     NavbarComponent,
     RedgisteredStudentsComponent,
     AboutComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    PipeDemoComponent,
+    EllipsisPipe
   ],
   imports: [
     BrowserModule,
