@@ -9,6 +9,15 @@ import { StudentService } from 'src/app/Services/student.service';
 })
 export class RedgisteredStudentsComponent implements OnInit {
 
+
+  deleteRow(student, index) {
+    const observables = this.studentService.deleteStudent(student);
+    observables.subscribe((response:any) => {
+      console.log(response);
+      this.students.splice(index,1)
+    })
+  }
+
   students : Student[] =[];
  
   constructor(private studentService: StudentService) { }

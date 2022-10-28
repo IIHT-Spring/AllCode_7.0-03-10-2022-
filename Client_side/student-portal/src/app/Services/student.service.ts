@@ -17,9 +17,12 @@ export class StudentService {
     return this.http.post(BASE_URL, student);
   }
 
+  deleteStudent(student:any) {
+    return this.http.delete(BASE_URL+"/"+student.id)
+  }
 
   getStudents() {
-    return this.http.get(BASE_URL)
+    return this.http.get(BASE_URL);
   }
 
   constructor(public http: HttpClient) {}
