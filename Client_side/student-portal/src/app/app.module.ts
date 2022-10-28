@@ -10,6 +10,8 @@ import { StudentRegComponent } from './Components/student-reg/student-reg.compon
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RedgisteredStudentsComponent } from './Components/redgistered-students/redgistered-students.component';
+import { AboutComponent } from './Components/about/about.component';
+import { ContactUsComponent } from './Components/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { RedgisteredStudentsComponent } from './Components/redgistered-students/
     HomeComponent,
     StudentRegComponent,
     NavbarComponent,
-    RedgisteredStudentsComponent
+    RedgisteredStudentsComponent,
+    AboutComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

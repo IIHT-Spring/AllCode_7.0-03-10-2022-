@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-const BASE_URL = 'http://localhost:5000/students';
+const BASE_URL = 'http://localhost:5000/students'; // instead of this you will have your sspringboot endpoints 
 
 @Injectable({
   providedIn: 'root',
