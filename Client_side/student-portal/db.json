@@ -1,12 +1,6 @@
 {
   "students": [
     {
-      "firstname": "Nishant",
-      "lastname": "Gupta",
-      "gender": "Male",
-      "id": 1
-    },
-    {
       "firstname": "Abhishek",
       "lastname": "Singh",
       "class": 12,
@@ -21,6 +15,30 @@
       "email": "sweta@gmail.com",
       "gender": "Male",
       "id": 4
+    },
+    {
+      "firstname": "peter",
+      "lastname": "Jeo",
+      "class": 5,
+      "email": "jeo@email.com",
+      "gender": "Male",
+      "id": 5
+    },
+    {
+      "firstname": "Susie",
+      "lastname": "ham",
+      "class": 6,
+      "email": "ham@email.com",
+      "gender": "Female",
+      "id": 6
+    },
+    {
+      "firstname": "Toto",
+      "lastname": "Woolf",
+      "class": 10,
+      "email": "toto@email.com",
+      "gender": "Male",
+      "id": 7
     }
   ]
 }
