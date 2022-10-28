@@ -4,4 +4,4 @@
 <h3>Qualification : {{ employee.Qualification | lowercase }}</h3>
 
 <h3>Winning percentage {{ employee.winningPercent | percent }}</h3>
-<p>{{employee.About}}</p>
+<p>{{employee.About | ellipsis}}</p>
