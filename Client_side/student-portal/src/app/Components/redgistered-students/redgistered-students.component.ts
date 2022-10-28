@@ -18,6 +18,13 @@ export class RedgisteredStudentsComponent implements OnInit {
     })
   }
 
+
+  sort() {
+    this.students.sort(function(student1, student2) {
+      return student1.class - student2.class
+    })
+  }
+
   students : Student[] =[];
  
   constructor(private studentService: StudentService) { }
