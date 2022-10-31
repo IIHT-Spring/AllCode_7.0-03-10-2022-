@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoAdd } from 'src/app/actions/todo.action';
 import { Todo } from 'src/app/models/Todo';
-import { Store } from '@ngrx/store/src/store';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'app-add-todo',
